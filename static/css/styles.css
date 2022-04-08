@@ -1,0 +1,131 @@
+body {
+    background-color: #323232;
+    color: rgb(189, 189, 189);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+table{
+    padding: 10px;
+}
+/* Fonts and styles */
+
+
+.font-bold {
+    font-weight:bold; 
+    font-size: 50px;
+}
+
+.font-semi-bold {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.navfont {
+    font-size: 20px; 
+    font-weight: 400;   
+}
+
+.header-padding {
+    padding-top: 10px;
+}
+
+.highlighter{
+    color: white;
+}
+
+/* navbar */
+.navbar {
+    background-color: #323232;
+}
+
+
+
+.profile_content {
+    background-color: #000000;
+    margin: auto 100px auto 100px;
+}
+
+.content-div {
+    margin: auto 200px 30px 200px;
+    padding: 30px 0px;
+    font-size: 18px;
+}
+/* .summary{ 
+    margin: 30px 300px 30px 300px;
+} */
+
+.content-element {
+    margin: 20px auto;
+}
+.ppic-div {
+    /* margin-top: 30px; */
+    margin-bottom: 0px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border:10px solid #FFAC41;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+.profile-summary{
+    font-size: 18px;
+}
+
+.content-head {
+    color: #FFAC41;
+}
+
+.row-tab {
+    /* text-align: left; */
+}
+
+.we-block {
+    /* margin: 10px auto 10px auto; */
+    font-size: 18px;
+}
+
+.we-details {
+    text-align: left;
+    /* margin: 10px 300px 10px 300px; */
+}
+
+
+.card-design {
+    background-color: #323232;
+    width: 18rem;
+    /* margin-left: 20px; */
+}
+
+#ppic {
+    /* margin-left: 900px; */
+    /* margin-top: 50px; */
+    height: 200px;
+    width: 200px;
+    border:10px solid #FFAC41;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.flex-container {
+    display: flex;
+    margin-left: 380px;
+}
+
+.flex-child {
+    margin-left: 30px;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+}
