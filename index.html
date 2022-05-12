@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Priyabrata's Website</title>
         <meta name="description" content="Priyabrata Samal's personal website via Github">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicon-->
@@ -40,7 +39,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item navfont">
-                    <a class="nav-link" href="#workexp" style="font-size: 20px">Work Experience</a>
+                    <a class="nav-link" href="#workexp">Work Experience</a>
                   </li>
                   <li class="nav-item navfont">
                     <a class="nav-link" href="#techstack">Skills</a>
@@ -49,7 +48,7 @@
                     <a class="nav-link" href="#project">My Work</a>
                   </li> -->
                   <li class="nav-item navfont">
-                    <a class="nav-link" href="#contact">Contact Me</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -57,10 +56,11 @@
         </nav>
 
         <!-- Resume Content -->
-        <div class="profile_content">
-            <!-- profile header -->
-            <div class="profile-header content-div">
+        <div class="row content-div">
+            <div class=".col-sm-6">
                 <img class="ppic-div content-element" src="static/images/ppic.jpg" alt="Profile picture">
+            </div>
+            <div class=".col-sm-6">
                 <h1 class="font-bold content-element" style="margin-bottom: 0;">Priyabrata Samal</h1>
                 <h2 class="font-semi-bold">Python Developer at TCS</h2>
                 <p class="profile-summary">Developer with over 5 years of experience in Python and 8 years of experience in Investment
@@ -68,252 +68,227 @@
                     trading and insurance modeling applications. I write effective and
                     scalable code and oversee its successful end to end implementation.</p>
             </div>
-            <hr style="height: 20px;">
-            
-            <!-- Work Experience -->
-            <section id="workexp">
-                <div class="work-experience content-div">
+        </div>
+
+        <hr style="height: 20px;">
+        
+        <!-- Work Experience -->
+        <section id="workexp">
+            <div class="row content-div">
+                <div class=".col-sm-6">
                     <h1 class="content-head">Work Experience</h1>
+                    <div class="tablewrapper">
+                        <table class="current content-element" style="border: solid;">
+                            <tr>
+                                <td style="font-weight: bold;" class="header-padding">Python Developer at TCS</td>
+                            </tr>
+                            <tr>
+                                <td>January 2020 — Present</td>
+                            </tr>
+                            <tr>
+                                <td>Client - Prudential Financial</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul class="we-details">
+                                        <li>Core engineer for Tardis, a Python platform which streamlines the productionization of applications developed by financial analysts and modelers within the Chief Investment Office.</li>
+                                        <li>Developing Python modules to analyze, calculate and store
+                                            the data required by trading and insurance modeling teams in
+                                            Cassandra/redshift databases via ORM.</li>
+                                        <li>Retrieving daily/historical values of Indices, Spreads, Curves and
+                                            currencies from Bloomberg/Market data APIs and storing them
+                                            after calculations as per existing models.</li>
+                                        <li>Developed web applications using HTML, CSS, Bootstrap and Flask/Tornado and archiving the data to AWS S3 buckets</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tablewrapper">
+                        <table class="prev1 content-element" style="border: solid;">
+                            <tr>
+                                <td style="font-weight: bold;" class="header-padding">Python Developer/Fix Integrator at TCS</td>
+                            </tr>
+                            <tr>
+                                <td>July 2016 — January 2020</td>
+                            </tr>
+                            <tr>
+                                <td>Client - Morgan Stanley</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul class="we-details">
+                                        <li>Worked as a python developer/fix integrator for Morgan Stanley's
+                                            Listed Sales and Trading Team.</li>
+                                        <li>Identified and fixed production issues with trading systems by
+                                            looking into order flow logs and FIX(4.2) messages, closely
+                                            working with trading team.</li>
+                                        <li>Onboarding various trading products for equities, future
+                                            contracts and options by analyzing their impact on the
+                                            existing system and devising solutions to mitigate any
+                                            identified risks.</li>
+                                        <li>developed Python scripts, wrote multitests to automate tasks and
+                                            test releases before deploying to production via Jenkins resulting
+                                            in significant increase of successful deployments</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     
-                    <table class="current content-element" style="border: solid;">
-                        <tr>
-                            <td style="font-weight: bold;" class="header-padding">Python Developer at TCS</td>
-                        </tr>
-                        <tr>
-                            <td>January 2020 — Present</td>
-                        </tr>
-                        <tr>
-                            <td>Client - Prudential Financial</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul class="we-details">
-                                    <li>Core engineer for Tardis, a Python platform which streamlines the productionization of applications developed by financial analysts and modelers within the Chief Investment Office.</li>
-                                    <li>Developing Python modules to analyze, calculate and store
-                                        the data required by trading and insurance modeling teams in
-                                        Cassandra/redshift databases via ORM.</li>
-                                    <li>Retrieving daily/historical values of Indices, Spreads, Curves and
-                                        currencies from Bloomberg/Market data APIs and storing them
-                                        after calculations as per existing models.</li>
-                                    <li>Developed web applications using HTML, CSS, Bootstrap and Flask/Tornado and archiving the data to AWS S3 buckets</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="prev1 content-element" style="border: solid;">
-                        <tr>
-                            <td style="font-weight: bold;" class="header-padding">Python Developer/Fix Integrator at TCS</td>
-                        </tr>
-                        <tr>
-                            <td>July 2016 — January 2020</td>
-                        </tr>
-                        <tr>
-                            <td>Client - Morgan Stanley</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul class="we-details">
-                                    <li>Worked as a python developer/fix integrator for Morgan Stanley's
-                                        Listed Sales and Trading Team.</li>
-                                    <li>Identified and fixed production issues with trading systems by
-                                        looking into order flow logs and FIX(4.2) messages, closely
-                                        working with trading team.</li>
-                                    <li>Onboarding various trading products for equities, future
-                                        contracts and options by analyzing their impact on the
-                                        existing system and devising solutions to mitigate any
-                                        identified risks.</li>
-                                    <li>developed Python scripts, wrote multitests to automate tasks and
-                                        test releases before deploying to production via Jenkins resulting
-                                        in significant increase of successful deployments</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="prev2 content-element" style="border: solid;">
-                        <tr>
-                            <td style="font-weight: bold;" class="header-padding">Application Support Analyst at TCS</td>
-                        </tr>
-                        <tr>
-                            <td>March 2014 — July 2016</td>
-                        </tr>
-                        <tr>
-                            <td>Client - Morgan Stanley</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul class="we-details">
-                                    <li>Worked as an Application Support Analyst for Morgan Stanley's
-                                        TELOS team</li>
-                                    <li>Monitored end to end flow of various Sales & trading Applications
-                                        24X5, resolved alerts and user requests within agreed SLA.</li>
-                                    <li>Handled outage calls by analyzing impact, performing
-                                        remediation approach, RCA and sending iAnnounce/iAlert and
-                                        reports.</li>
-                                    <li>Populated testing databases with identical data from
-                                        Production Databases and managing the issues involved</li>
-                                    <li>Reduced team workload by 25% after automating manual tasks,
-                                        RFB checks via shell scripts, SQL stored procedures and then
-                                        scheduling them via autosys/CRON</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-            
-            <hr style="height: 20px;">
-
-            <!-- Tech Stack -->
-            <section id="techstack">
-                <div class="tech-stack-block content-div">
-                    <h1 class="content-head">Tech Stack</h1>
-                    <table class="table table-dark table-striped table-hover content-element">
-                        <tbody>
+                    <div class="tablewrapper">
+                        <table class="prev2 content-element" style="border: solid;">
                             <tr>
-                                <th scope="row">Programming Language</th>
-                                <td>Python(Pandas, Numpy)</td>
+                                <td style="font-weight: bold;" class="header-padding">Application Support Analyst at TCS</td>
                             </tr>
                             <tr>
-                                <th scope="row">Web Framework</th>
-                                <td>Flask, Django, Tornado web server</td>
+                                <td>March 2014 — July 2016</td>
                             </tr>
                             <tr>
-                                <th scope="row">Frontend</th>
-                                <td>HTML, CSS, Bootstrap, REST API</td>
+                                <td>Client - Morgan Stanley</td>
                             </tr>
                             <tr>
-                                <th scope="row">Cloud Platform</th>
-                                <td>AWS(EC2, S3, redshift)</td>
+                                <td>
+                                    <ul class="we-details">
+                                        <li>Worked as an Application Support Analyst for Morgan Stanley's
+                                            TELOS team</li>
+                                        <li>Monitored end to end flow of various Sales & trading Applications
+                                            24X5, resolved alerts and user requests within agreed SLA.</li>
+                                        <li>Handled outage calls by analyzing impact, performing
+                                            remediation approach, RCA and sending iAnnounce/iAlert and
+                                            reports.</li>
+                                        <li>Populated testing databases with identical data from
+                                            Production Databases and managing the issues involved</li>
+                                        <li>Reduced team workload by 25% after automating manual tasks,
+                                            RFB checks via shell scripts, SQL stored procedures and then
+                                            scheduling them via autosys/CRON</li>
+                                    </ul>
+                                </td>
                             </tr>
-                            <tr>
-                                <th scope="row">Database</th>
-                                <td>SQL(MySQL, SQLite3, Sybase), NoSQL(Cassandra, MongoDB)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Version Control</th>
-                                <td>Git, Perforce</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">CI/CD</th>
-                                <td>Jenkins</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Project Methodologies</th>
-                                <td>Agile(Scrum, Kanban), Waterfall SDLC</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Job Schedulers</th>
-                                <td>CRON, Autosys, Celery, Treadmill</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Others</th>
-                                <td>Linux, Shell Scripting</td>
-                            </tr>
-                        </tbody>
-                      </table>
-                </div>
-            </section>
-            
-            <hr style="height: 20px;">
-
-            <!-- Project -->
-            <!-- <section id="project">
-                <div class="project-block content-div">
-                    <h1 class="content-head">My Works</h1>
-                    <div class="row">
-                        <div class="col-sm-4">
-                          <div class="card card-design content-element">
-                            <div class="card-body">
-                              <h5 class="card-title"><span class="highlighter">Music TimeMachine</span></h5>
-                              <p class="card-text">Create spotify playlist of top 100 songs for any year/month/date.</p>
-                              <a href="https://github.com/priyabrs/music_time_machine" target="_blank" class="btn btn-primary">Code</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="card card-design content-element">
-                            <div class="card-body">
-                              <h5 class="card-title"><span class="highlighter">Tindog</span></h5>
-                              <p class="card-text">A mock tinder website(but for dogs) using Flask/HTML/CSS/Bootstrap</p>
-                              <a href="https://github.com/priyabrs/Web-dev/tree/main/bootstrap/tindog" target="_blank" class="btn btn-primary">Code</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card card-design content-element">
-                              <div class="card-body">
-                                <h5 class="card-title"><span class="highlighter">Fantasy Cricket Data</span> </h5>
-                                <p class="card-text">A project to analyze IPL data(All Seasons) for fantasy leagues</p>
-                                <a href="https://github.com/priyabrs/Fantasy_Cricket" class="btn btn-primary">Code</a>
-                              </div>
-                            </div>
-                        </div>
+                        </table>
                     </div>
                 </div>
-            </section> -->
-            
-            <!-- <hr style="height: 20px;"> -->
-
-            <!-- Education -->
-            <div class="Education content-div">
-                <h1 class="content-head">Education</h1>
-                <table class="prev2 content-element">
-                    <tr>
-                        <td style="font-weight: bold;" class="header-padding"><span class="highlighter">Bachelor In Technology (Electronics and Communication Engineering)</span> </td>
-                    </tr>
-                    <tr>
-                        <td>Sep 2009 - Jul 2013</td>
-                    </tr>
-                    <tr>
-                        <td>Institute of Technical Education and Research</td>
-                    </tr>
-                </table>
-                <table class="prev2 content-element">
-                    <tr>
-                        <td style="font-weight: bold;" class="header-padding"><span class="highlighter">Class X & XII</span></td>
-                    </tr>
-                    <tr>
-                        <td>2006-2007/2007-2009</td>
-                    </tr>
-                    <tr>
-                        <td>Jawahar Navodaya Vidyalaya, Phulbani</td>
-                    </tr>
-                </table>
             </div>
-            <hr style="height: 20px;">
-            <!-- contact page -->
-            
-            <section id="contact">
-                <div class="Contact-block content-div">
-                    <h1 class="content-head">Contact Me</h1>
-                    <div class="footer-mail content-element">
+        </section>
+        
+        <hr style="height: 20px;">
+
+        <!-- Tech Stack -->
+        <section id="techstack">
+            <div class="row content-div">
+                <div class=".col-sm-6">
+                    <h1 class="content-head">Tech Stack</h1>
+                    <div class="tablewrapper">
+                        <table class="table table-dark table-striped table-hover content-element">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Programming Language</th>
+                                    <td>Python(Pandas, Numpy)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Web Framework</th>
+                                    <td>Flask, Django, Tornado web server</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Frontend</th>
+                                    <td>HTML, CSS, Bootstrap, REST API</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cloud Platform</th>
+                                    <td>AWS(EC2, S3, redshift)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Database</th>
+                                    <td>SQL(MySQL, SQLite3, Sybase), NoSQL(Cassandra, MongoDB)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Version Control</th>
+                                    <td>Git, Perforce</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">CI/CD</th>
+                                    <td>Jenkins</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Project Methodologies</th>
+                                    <td>Agile(Scrum, Kanban), Waterfall SDLC</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Job Schedulers</th>
+                                    <td>CRON, Autosys, Celery, Treadmill</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Others</th>
+                                    <td>Linux, Shell Scripting</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <hr style="height: 20px;">
+
+        <!-- Education -->
+        <section id="education">
+            <div class="row content-div">
+                <div class=".col-sm-6">
+                    <h1 class="content-head">Education</h1>
+                    <table class="prev2 content-element">
+                        <tr>
+                            <td style="font-weight: bold;" class="header-padding"><span class="highlighter">Bachelor In Technology (Electronics and Communication Engineering)</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Sep 2009 - Jul 2013</td>
+                        </tr>
+                        <tr>
+                            <td>Institute of Technical Education and Research</td>
+                        </tr>
+                    </table>
+                    <table class="prev2 content-element">
+                        <tr>
+                            <td style="font-weight: bold;" class="header-padding"><span class="highlighter">Class X & XII</span></td>
+                        </tr>
+                        <tr>
+                            <td>2006-2007/2007-2009</td>
+                        </tr>
+                        <tr>
+                            <td>Jawahar Navodaya Vidyalaya, Phulbani</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <hr style="height: 20px;">
+
+        <!-- contact page -->
+        <section id="contact">       
+            <div class="row content-div">
+                <div class=".col-sm-6">
+                    <h1 class="content-head">Contact</h1>
+                    <div class="footer content-element">
                         <a href=""><i class="fa-solid fa-envelope"></i></a>
                         samal7244@gmail.com
                     </div>
-                    <div class="footer-call content-element">
+                    <div class="footer content-element">
+                        <i class="fa-brands fa-linkedin" style="background-color:blue ;"></i>
+                        <a class="link-element" href="https://www.linkedin.com/in/priyabrata-samal/" target="_blank">LinkedIn</a>                
+                    </div>
+                    <div class="footer content-element">
+                        <i class="fa-brands fa-github" style="background-color: #000 ;"></i>
+                        <a class="link-element" href="https://github.com/priyabrs" target="_blank"> Github</i></a>
+                        
+                    </div>
+                    <div class="footer content-element">
                         <a href=""><i class="fa-solid fa-phone"></i></a>
                         +91 9527550323, +91 7978313039
                     </div>
-                    <div class="flex-container">
-    
-                        <div class="flex-child">
-                            <a href="https://www.linkedin.com/in/priyabrata-samal/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                        </div>
-                        
-                        <div class="flex-child">
-                            <a href="https://github.com/priyabrs" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-                        </div>
-                        
-                    </div>
-            </section>
-               
+                </div>
             </div>
-
-            
-        </div>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        </section>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

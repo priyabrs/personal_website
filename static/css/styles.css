@@ -1,16 +1,23 @@
+/* HTML Tags */
 body {
     background-color: #323232;
     color: rgb(189, 189, 189);
     text-align: center;
+    font-size: 18px;
     font-family: 'Inter', sans-serif;
 }
 
-table{
-    padding: 10px;
+hr {
+    margin: 0;
+    height: 20px;
+    background-color: #323232;
 }
-/* Fonts and styles */
 
+table {
+    width: 100%;
+}
 
+/* Font styling */
 .font-bold {
     font-weight:bold; 
     font-size: 50px;
@@ -34,32 +41,19 @@ table{
     color: white;
 }
 
+.content-head {
+    color: #FFAC41;
+    margin-top: 20px;
+}
+
 /* navbar */
 .navbar {
     background-color: #323232;
 }
 
 
-
-.profile_content {
-    background-color: #000000;
-    margin: auto 100px auto 100px;
-}
-
-.content-div {
-    margin: auto 200px 30px 200px;
-    padding: 30px 0px;
-    font-size: 18px;
-}
-/* .summary{ 
-    margin: 30px 300px 30px 300px;
-} */
-
-.content-element {
-    margin: 20px auto;
-}
+/* Classes */
 .ppic-div {
-    /* margin-top: 30px; */
     margin-bottom: 0px;
     border-radius: 50%;
     height: 200px;
@@ -71,27 +65,39 @@ table{
 }
 
 .profile-summary{
-    font-size: 18px;
+    margin: 0 5% 5% 5%;
 }
 
-.content-head {
-    color: #FFAC41;
+.tablewrapper {
+    margin: 0 5% 5% 5%;
 }
 
-.row-tab {
-    /* text-align: left; */
+.content-div {
+    background-color: #000000;
+    margin:auto 12% ;
 }
 
-.we-block {
-    /* margin: 10px auto 10px auto; */
-    font-size: 18px;
+.content-element {
+    margin: 20px auto;
 }
 
 .we-details {
     text-align: left;
-    /* margin: 10px 300px 10px 300px; */
+    
 }
 
+.footer { 
+    display: inline-block ;
+    text-align: left;
+    margin: 20px;
+}
+
+.link-element {
+    font-family: 'Inter', sans-serif; 
+    font-size: 18px; 
+    color:rgb(189, 189, 189); 
+    text-decoration: none;
+}
 
 .card-design {
     background-color: #323232;
@@ -99,33 +105,24 @@ table{
     /* margin-left: 20px; */
 }
 
-#ppic {
-    /* margin-left: 900px; */
-    /* margin-top: 50px; */
-    height: 200px;
-    width: 200px;
-    border:10px solid #FFAC41;
-    border-radius: 500px;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-
-}
-
 .card:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.flex-container {
+
+/* .flex-container {
     display: flex;
-    margin-left: 380px;
-}
+    justify-content: center;
+    flex-direction: row;
+  }
 
-.flex-child {
-    margin-left: 30px;
-}
+  @media only screen and (max-width: 900px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
 
-.icon {
-    height: 100px;
-    width: 100px;
-}
+.child {
+    margin: 5px;
+} */
