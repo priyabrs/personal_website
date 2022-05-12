@@ -6,6 +6,11 @@ body {
     font-size: 18px;
     font-family: 'Inter', sans-serif;
 }
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: #000000
+    }
+  }
 
 hr {
     margin: 0;
@@ -54,7 +59,7 @@ table {
 
 /* Classes */
 .ppic-div {
-    margin-bottom: 0px;
+    margin-top: 30px;
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -71,11 +76,22 @@ table {
 .tablewrapper {
     margin: 0 5% 5% 5%;
 }
+@media only screen and (max-width: 500px) {
+    .tablewrapper {
+        margin: 0;
+    }
+  }
+
 
 .content-div {
     background-color: #000000;
-    margin:auto 5% ;
+    margin:auto 15% ;
 }
+@media only screen and (max-width: 500px) {
+    .content-div {
+        margin: 0;
+    }
+  }
 
 .content-element {
     margin: 20px auto;
